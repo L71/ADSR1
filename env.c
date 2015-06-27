@@ -14,55 +14,44 @@ struct adc_data {
 #define ATTACKING	2
 #define DEC_SUST	3
 
-// gate event tracking
+// gate event flags
 uint8_t gate_went_high=0 ;	// event: gate went high
 uint8_t gate_went_low=0 ;	// event: gate went low
 
-#define ATTACK_DONE_LVL  250	// at which ADC/capacitor level the attack phase should be done
+// at which ADC/capacitor level the attack phase should be considered done
+#define ATTACK_DONE_LVL  254	
 
 
 void adc_setup() {
-	// enable ADC. We'll use 8 bits results, so left adjust result register.
-	
 	// enable ADC, clock prescaler = /64
 	ADCSRA |= (1<<ADEN) | (1<<ADPS2) | (1<<ADPS0) ;
-	
 	// left adjust result, we'll use 8 bits results in high byte only.
 	ADCSRB |= (1<<ADLAR);
-	
 	// disable digital IO on used ADC pins
 	DIDR0 = 0b00000011;	
-	
 	// Go! =)
 	ADCSRA |= (1<<ADSC) ;
 }
 
 void run_main_timer() {	// enable 16bit timer1 + interrupts
-	
-	// OCR1AH = 0x1f; // 8MHz, divider 8000 -> 1KHz timer
-	// OCR1AL = 0x40;
-	
 	OCR1AH = 0x03; // 8MHz, divider 1000 -> 8KHz timer
 	OCR1AL = 0xe8;
-	
 	// clear on OCR1A, clock prescaler 1. 
 	TCCR1B |= (1<<WGM12) | (1<<CS10) ;
-	// TCCR1B |= (1<<WGM12) | (1<<CS10) | (1<<CS11) ;  // presc. /64
-	
 	// enable OCR1A interrupt
 	TIMSK1 |= (1<<OCIE1A);
 }
 
 
-void sw_set_release() {
+inline void sw_set_release() {
 	PORTB &= 0xf8;	// all switches off
 	PORTB |= _BV(PB0);	
 }
-void sw_set_attack() {
+inline void sw_set_attack() {
 	PORTB &= 0xf8;	// all switches off
 	PORTB |= _BV(PB1);
 }
-void sw_set_dec_sust() {
+inline void sw_set_dec_sust() {
 	PORTB &= 0xf8;	// all switches off
 	PORTB |= _BV(PB2);
 }
@@ -91,7 +80,7 @@ ISR(PCINT0_vect) {  	// GATE IN pin change interrupt
 }
 
 
-void state_update() {
+inline void state_update() {
 
 	static uint8_t stage = RELEASING ; 	// curremt ENV stage
 	
