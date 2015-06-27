@@ -116,7 +116,6 @@ void state_update() {
 				stage = RELEASING;
 				sw_set_release();
 			}
-
 			break;
 			
 		case DEC_SUST:
@@ -163,10 +162,10 @@ ISR(TIM1_COMPA_vect) {
 	ADMUX &= 0xf0;	// reset channel bits
 	ADMUX |= adc_chan ;
 	
-	// start next conversion
-	ADCSRA |= (1<<ADSC) ;
-	
 	// update ENV state machine 
 	state_update();
+	
+	// start next conversion
+	ADCSRA |= (1<<ADSC) ;
 
 }
