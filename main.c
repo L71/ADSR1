@@ -24,11 +24,12 @@ int main() {
 	DDRB |= _BV(PB0) | _BV(PB1) | _BV(PB2);
 
 	// activate release switch
-	// PORTB |= _BV(PB0);
 	sw_set_release();
 	
+	pc_int_setup();
 	adc_setup();
 	run_main_timer();
+
 
     // Enable interrupts for all. GO! =)
     SREG |= 0x80 ;

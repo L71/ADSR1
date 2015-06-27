@@ -14,7 +14,12 @@ struct adc_data {
 #define ATTACKING	2
 #define DEC_SUST	3
 
+// gate event tracking
+uint8_t gate_went_high=0 ;	// event: gate went high
+uint8_t gate_went_low=0 ;	// event: gate went low
+
 #define ATTACK_DONE_LVL  250	// at which ADC/capacitor level the attack phase should be done
+
 
 void adc_setup() {
 	// enable ADC. We'll use 8 bits results, so left adjust result register.
@@ -48,6 +53,7 @@ void run_main_timer() {	// enable 16bit timer1 + interrupts
 	TIMSK1 |= (1<<OCIE1A);
 }
 
+
 void sw_set_release() {
 	PORTB &= 0xf8;	// all switches off
 	PORTB |= _BV(PB0);	
@@ -61,34 +67,34 @@ void sw_set_dec_sust() {
 	PORTB |= _BV(PB2);
 }
 
+void pc_int_setup() {
+	GIMSK |= _BV(PCIE0) ;	// enable pin change 0 interrupt 
+	PCMSK0 |= _BV(PCINT7); // enable pin change interrupts for PA7.
+}
+	
+ISR(PCINT0_vect) {  	// GATE IN pin change interrupt
+
+	uint8_t gate ; // gate input value
+	gate = ( ~PINA & 0x80 );	// check gate input pin
+
+	// clear gate change flags
+	gate_went_high=0;
+	gate_went_low=0;
+
+	if (gate) {
+		gate_went_high = 1 ;
+	} 
+	if (! gate) {
+		gate_went_low = 1;
+	}
+	
+}
+
 
 void state_update() {
-	
-	uint8_t gate_went_high=0 ;	// event: gate went high
-	uint8_t gate_went_low=0 ;	// event: gate went low
-	
-	static uint8_t prev_gate_level ; // saves previous gate level 
-	
-	uint8_t gate ; // gate input value
 
 	static uint8_t stage = RELEASING ; 	// curremt ENV stage
 	
-	gate = ( ~PINA & 0x80 );	// check gate input pin
-	
-	
-	if ( prev_gate_level == 0 ) {	
-		if (gate) { // gate went low->high
-			gate_went_high = 1 ;
-			prev_gate_level = 1;
-		}
-	} else {	// prev state high, low now... 
-		if (! gate) {
-			gate_went_low = 1 ; 
-			prev_gate_level = 0 ;
-		}
-	}
-	
-
 	// state machine 
 	switch (stage) {
 	
@@ -100,16 +106,17 @@ void state_update() {
 			break;
 			
 		case ATTACKING:
-			// gate went low while attacking? -> go to release
-			if (gate_went_low) {	
-				stage = RELEASING;
-				sw_set_release();
-			}
 			// capacitor level reached limit? -> go to decay/sustain
 			if (adc.cap_level >= ATTACK_DONE_LVL) {
 				stage = DEC_SUST;
 				sw_set_dec_sust();
 			}
+			// gate went low while attacking? -> go to release
+			if (gate_went_low) {
+				stage = RELEASING;
+				sw_set_release();
+			}
+
 			break;
 			
 		case DEC_SUST:
@@ -124,8 +131,10 @@ void state_update() {
 			}
 			break;
 			
-	}	
-	
+	}
+	// clear gate change flags
+	gate_went_high=0;
+	gate_went_low=0;
 }
 
 
