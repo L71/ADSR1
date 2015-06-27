@@ -10779,7 +10779,7 @@ Source: www.kingbright.com</description>
 <parts>
 <part name="FRAME1" library="frames" deviceset="A3L-LOC" device=""/>
 <part name="U$1" library="SparkFun-DigitalIC" deviceset="ATTINY84" device=""/>
-<part name="JP1" library="pinhead" deviceset="PINHD-2X5" device=""/>
+<part name="JP1" library="pinhead" deviceset="PINHD-2X5" device="" value="EURORACK PSU"/>
 <part name="C5" library="rcl" deviceset="C-EU" device="C0603K" value="100n"/>
 <part name="IC1" library="lb_devs" deviceset="78LXX" device="SMD" value="78L05"/>
 <part name="D1" library="diode" deviceset="DIODE-" device="DO214AA" value="1N4004 equiv"/>
@@ -10796,7 +10796,7 @@ Source: www.kingbright.com</description>
 <part name="P-1" library="supply1" deviceset="-12V" device=""/>
 <part name="IC2" library="40xx" deviceset="4066" device="D"/>
 <part name="IC3" library="linear" deviceset="TL072" device="D" value="MCP6002"/>
-<part name="C7" library="rcl" deviceset="C-EU" device="C0603K" value="470n"/>
+<part name="C7" library="rcl" deviceset="C-EU" device="C0603K" value="1u"/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
 <part name="P+6" library="supply1" deviceset="+5V" device=""/>
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
@@ -10821,7 +10821,7 @@ Source: www.kingbright.com</description>
 <part name="GND9" library="supply1" deviceset="GND" device=""/>
 <part name="GND10" library="supply1" deviceset="GND" device=""/>
 <part name="GND11" library="supply1" deviceset="GND" device=""/>
-<part name="C10" library="rcl" deviceset="C-EU" device="C1206K" value="470n"/>
+<part name="C10" library="rcl" deviceset="C-EU" device="C1206K" value="1u"/>
 <part name="GND12" library="supply1" deviceset="GND" device=""/>
 <part name="GATE_IN" library="thonkiconn" deviceset="WQP-PJ301M-12_JACK" device=""/>
 <part name="R9" library="rcl" deviceset="R-EU_" device="R0603" value="100k"/>
@@ -10830,9 +10830,9 @@ Source: www.kingbright.com</description>
 <part name="P+10" library="supply1" deviceset="+5V" device=""/>
 <part name="GND13" library="supply1" deviceset="GND" device=""/>
 <part name="GND14" library="supply1" deviceset="GND" device=""/>
-<part name="C6" library="rcl" deviceset="C-EU" device="C1206K" value="10u"/>
-<part name="C1" library="rcl" deviceset="C-EU" device="C1206K" value="10u"/>
-<part name="C2" library="rcl" deviceset="C-EU" device="C1206K" value="10u"/>
+<part name="C6" library="rcl" deviceset="C-EU" device="C1206K" value="10u 16V"/>
+<part name="C1" library="rcl" deviceset="C-EU" device="C1206K" value="10u 16V"/>
+<part name="C2" library="rcl" deviceset="C-EU" device="C1206K" value="10u 16V"/>
 <part name="IC4" library="linear" deviceset="TL072" device="D"/>
 <part name="R11" library="rcl" deviceset="R-EU_" device="R0603" value="60k"/>
 <part name="R12" library="rcl" deviceset="R-EU_" device="R0603" value="100k"/>
@@ -10846,8 +10846,8 @@ Source: www.kingbright.com</description>
 <part name="P-2" library="supply1" deviceset="-12V" device=""/>
 <part name="GND17" library="supply1" deviceset="GND" device=""/>
 <part name="SW1" library="lb_devs" deviceset="TL2285" device=""/>
-<part name="C11" library="rcl" deviceset="C-EU" device="C1206K" value="4,7u"/>
-<part name="C12" library="rcl" deviceset="C-EU" device="C0603K" value="4,7u"/>
+<part name="C11" library="rcl" deviceset="C-EU" device="C1206K" value="10u"/>
+<part name="C12" library="rcl" deviceset="C-EU" device="C0603K" value="10u"/>
 <part name="GND18" library="supply1" deviceset="GND" device=""/>
 <part name="R14" library="rcl" deviceset="R-EU_" device="R0603" value="60k"/>
 <part name="R15" library="rcl" deviceset="R-EU_" device="R0603" value="100k"/>
@@ -10857,6 +10857,9 @@ Source: www.kingbright.com</description>
 <part name="GND20" library="supply1" deviceset="GND" device=""/>
 <part name="R17" library="pot-alps" deviceset="POT_US" device="VERTICAL" value="100k"/>
 <part name="R18" library="rcl" deviceset="R-EU_" device="R0603" value="100"/>
+<part name="R19" library="rcl" deviceset="R-EU_" device="R0603" value="100"/>
+<part name="GND21" library="supply1" deviceset="GND" device=""/>
+<part name="D2" library="diode" deviceset="DIODE-" device="DO214AA" value="1N4004 equiv"/>
 </parts>
 <sheets>
 <sheet>
@@ -10865,11 +10868,14 @@ Source: www.kingbright.com</description>
 56k -&gt; 7.8V P-P
 60k -&gt; 8.0V P-P
 68k -&gt; 8.4V P-P</text>
-<text x="228.6" y="139.7" size="1.778" layer="91">Time X6 switch</text>
-<text x="154.94" y="185.42" size="1.778" layer="91">IC2 = CD4066 -&gt; R18 1 Ohm
+<text x="228.6" y="139.7" size="1.778" layer="91">Time X11 switch</text>
+<text x="203.2" y="152.4" size="1.778" layer="91" rot="R90">IC2 = CD4066 -&gt; R18 1 Ohm
 IC2 = 74HC/HCT4066 -&gt; R18 100 Ohm
 HC/HCT types have much lower on-resistance
 and must be current-limited.</text>
+<text x="269.24" y="124.46" size="1.778" layer="91">Note:
+Only one of C7/C10 and C11/C12 need to be fitted.
+They are there to enable different form factor (0603 or 1206) caps on the PCB.</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
@@ -10951,7 +10957,7 @@ and must be current-limited.</text>
 <instance part="P+11" gate="1" x="119.38" y="66.04"/>
 <instance part="P-2" gate="1" x="119.38" y="25.4"/>
 <instance part="GND17" gate="1" x="134.62" y="40.64"/>
-<instance part="SW1" gate="G$1" x="236.22" y="127"/>
+<instance part="SW1" gate="G$1" x="238.76" y="124.46" rot="MR0"/>
 <instance part="C11" gate="G$1" x="259.08" y="121.92"/>
 <instance part="C12" gate="G$1" x="251.46" y="121.92"/>
 <instance part="GND18" gate="1" x="254" y="106.68"/>
@@ -10963,6 +10969,12 @@ and must be current-limited.</text>
 <instance part="GND20" gate="1" x="241.3" y="200.66"/>
 <instance part="R17" gate="G$1" x="241.3" y="218.44"/>
 <instance part="R18" gate="G$1" x="195.58" y="144.78"/>
+<instance part="R19" gate="G$1" x="226.06" y="116.84" rot="R90"/>
+<instance part="GND21" gate="1" x="226.06" y="106.68"/>
+<instance part="D2" gate="G$1" x="43.18" y="30.48" smashed="yes" rot="R180">
+<attribute name="NAME" x="55.88" y="29.9974" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="55.88" y="27.7114" size="1.778" layer="96" rot="R180"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -11220,6 +11232,11 @@ and must be current-limited.</text>
 <wire x1="241.3" y1="210.82" x2="241.3" y2="205.74" width="0.1524" layer="91"/>
 <junction x="241.3" y="205.74"/>
 </segment>
+<segment>
+<pinref part="GND21" gate="1" pin="GND"/>
+<pinref part="R19" gate="G$1" pin="1"/>
+<wire x1="226.06" y1="109.22" x2="226.06" y2="111.76" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="+12V" class="0">
 <segment>
@@ -11333,18 +11350,13 @@ and must be current-limited.</text>
 </net>
 <net name="-12V" class="0">
 <segment>
-<pinref part="JP1" gate="A" pin="9"/>
-<pinref part="JP1" gate="A" pin="10"/>
-<wire x1="20.32" y1="43.18" x2="27.94" y2="43.18" width="0.1524" layer="91"/>
-<wire x1="27.94" y1="43.18" x2="35.56" y2="43.18" width="0.1524" layer="91"/>
-<wire x1="35.56" y1="43.18" x2="35.56" y2="30.48" width="0.1524" layer="91"/>
-<junction x="27.94" y="43.18"/>
-<wire x1="35.56" y1="30.48" x2="53.34" y2="30.48" width="0.1524" layer="91"/>
 <pinref part="P-1" gate="1" pin="-12V"/>
-<wire x1="53.34" y1="27.94" x2="53.34" y2="30.48" width="0.1524" layer="91"/>
-<wire x1="53.34" y1="35.56" x2="53.34" y2="30.48" width="0.1524" layer="91"/>
-<junction x="53.34" y="30.48"/>
 <pinref part="C2" gate="G$1" pin="2"/>
+<wire x1="53.34" y1="35.56" x2="53.34" y2="30.48" width="0.1524" layer="91"/>
+<pinref part="D2" gate="G$1" pin="A"/>
+<wire x1="53.34" y1="30.48" x2="53.34" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="45.72" y1="30.48" x2="53.34" y2="30.48" width="0.1524" layer="91"/>
+<junction x="53.34" y="30.48"/>
 </segment>
 <segment>
 <pinref part="C4" gate="G$1" pin="2"/>
@@ -11371,13 +11383,13 @@ and must be current-limited.</text>
 <pinref part="IC4" gate="B" pin="+IN"/>
 <wire x1="261.62" y1="187.96" x2="210.82" y2="187.96" width="0.1524" layer="91"/>
 <wire x1="210.82" y1="187.96" x2="210.82" y2="144.78" width="0.1524" layer="91"/>
-<pinref part="SW1" gate="G$1" pin="P3"/>
-<wire x1="228.6" y1="132.08" x2="223.52" y2="132.08" width="0.1524" layer="91"/>
-<wire x1="223.52" y1="132.08" x2="223.52" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="223.52" y1="127" x2="223.52" y2="144.78" width="0.1524" layer="91"/>
 <junction x="223.52" y="144.78"/>
 <pinref part="R18" gate="G$1" pin="2"/>
 <wire x1="200.66" y1="144.78" x2="203.2" y2="144.78" width="0.1524" layer="91"/>
 <junction x="203.2" y="144.78"/>
+<pinref part="SW1" gate="G$1" pin="P2"/>
+<wire x1="231.14" y1="127" x2="223.52" y2="127" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="ATTACK" class="0">
@@ -11573,13 +11585,13 @@ and must be current-limited.</text>
 </net>
 <net name="N$16" class="0">
 <segment>
-<pinref part="SW1" gate="G$1" pin="P2"/>
-<wire x1="243.84" y1="129.54" x2="251.46" y2="129.54" width="0.1524" layer="91"/>
 <pinref part="C12" gate="G$1" pin="1"/>
 <wire x1="251.46" y1="129.54" x2="251.46" y2="124.46" width="0.1524" layer="91"/>
 <wire x1="251.46" y1="129.54" x2="259.08" y2="129.54" width="0.1524" layer="91"/>
 <pinref part="C11" gate="G$1" pin="1"/>
 <wire x1="259.08" y1="129.54" x2="259.08" y2="124.46" width="0.1524" layer="91"/>
+<pinref part="SW1" gate="G$1" pin="P3"/>
+<wire x1="246.38" y1="129.54" x2="251.46" y2="129.54" width="0.1524" layer="91"/>
 <junction x="251.46" y="129.54"/>
 </segment>
 </net>
@@ -11640,6 +11652,26 @@ and must be current-limited.</text>
 <pinref part="R18" gate="G$1" pin="1"/>
 <wire x1="190.5" y1="144.78" x2="185.42" y2="144.78" width="0.1524" layer="91"/>
 <junction x="185.42" y="144.78"/>
+</segment>
+</net>
+<net name="N$18" class="0">
+<segment>
+<pinref part="SW1" gate="G$1" pin="P1"/>
+<wire x1="231.14" y1="132.08" x2="226.06" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="226.06" y1="132.08" x2="226.06" y2="121.92" width="0.1524" layer="91"/>
+<pinref part="R19" gate="G$1" pin="2"/>
+</segment>
+</net>
+<net name="N$14" class="0">
+<segment>
+<pinref part="JP1" gate="A" pin="9"/>
+<pinref part="JP1" gate="A" pin="10"/>
+<wire x1="20.32" y1="43.18" x2="27.94" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="43.18" x2="35.56" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="43.18" x2="35.56" y2="30.48" width="0.1524" layer="91"/>
+<junction x="27.94" y="43.18"/>
+<pinref part="D2" gate="G$1" pin="C"/>
+<wire x1="40.64" y1="30.48" x2="35.56" y2="30.48" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

@@ -1844,16 +1844,16 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="C10" library="rcl" package="C1206K" value="470n" x="-43.18" y="40.64"/>
+<element name="C10" library="rcl" package="C1206K" value="1u" x="-43.18" y="40.64"/>
 <element name="C5" library="rcl" package="C0603K" value="100n" x="-35.56" y="52.07"/>
-<element name="C7" library="rcl" package="C0603K" value="470n" x="-40.64" y="52.07"/>
+<element name="C7" library="rcl" package="C0603K" value="1u" x="-40.64" y="52.07"/>
 <element name="C8" library="rcl" package="C0603K" value="100n" x="-45.72" y="52.07"/>
 <element name="C9" library="rcl" package="C0603K" value="100n" x="-50.8" y="52.07"/>
 <element name="D1" library="diode" package="DO214AA" value="1N4004 equiv" x="-24.13" y="45.72"/>
 <element name="IC1" library="lb_devs" package="SOT89R" value="78L05" x="-46.99" y="19.05"/>
 <element name="IC2" library="40xx" package="SO14" value="4066D" x="-17.78" y="33.02"/>
 <element name="IC3" library="linear" package="SO08" value="MCP6002" x="-30.48" y="19.05"/>
-<element name="JP1" library="pinhead" package="2X05" value="" x="-31.75" y="31.75"/>
+<element name="JP1" library="pinhead" package="2X05" value="EURORACK PSU" x="-31.75" y="31.75"/>
 <element name="LED1" library="led" package="LED3MM" value="" x="-35.56" y="46.99"/>
 <element name="LED2" library="led" package="LED3MM" value="" x="-45.72" y="46.99"/>
 <element name="LED3" library="led" package="LED3MM" value="" x="-20.32" y="52.07"/>
@@ -1871,9 +1871,9 @@ design rules under a new name.</description>
 <element name="R9" library="rcl" package="R0603" value="100k" x="-62.23" y="-2.54"/>
 <element name="T1" library="transistor" package="SOT23" value="BC847" x="-62.23" y="-8.89"/>
 <element name="R10" library="rcl" package="R0603" value="10k" x="-62.23" y="-15.24"/>
-<element name="C6" library="rcl" package="C1206K" value="10u" x="-62.23" y="-20.32"/>
-<element name="C1" library="rcl" package="C1206K" value="10u" x="-62.23" y="-25.4"/>
-<element name="C2" library="rcl" package="C1206K" value="10u" x="-62.23" y="-30.48"/>
+<element name="C6" library="rcl" package="C1206K" value="10u 16V" x="-62.23" y="-20.32"/>
+<element name="C1" library="rcl" package="C1206K" value="10u 16V" x="-62.23" y="-25.4"/>
+<element name="C2" library="rcl" package="C1206K" value="10u 16V" x="-62.23" y="-30.48"/>
 <element name="IC4" library="linear" package="SO08" value="TL072D" x="-69.85" y="-29.21"/>
 <element name="R11" library="rcl" package="R0603" value="60k" x="-72.39" y="-35.56"/>
 <element name="R12" library="rcl" package="R0603" value="100k" x="-72.39" y="-40.64"/>
@@ -1882,14 +1882,16 @@ design rules under a new name.</description>
 <element name="C3" library="rcl" package="C0603K" value="100n" x="-83.82" y="-50.8"/>
 <element name="C4" library="rcl" package="C0603K" value="100n" x="-83.82" y="-55.88"/>
 <element name="SW1" library="lb_devs" package="TL2285_PCB" value="TL2285" x="-81.28" y="-62.23"/>
-<element name="C11" library="rcl" package="C1206K" value="4,7u" x="-83.82" y="-69.85"/>
-<element name="C12" library="rcl" package="C0603K" value="4,7u" x="-83.82" y="-74.93"/>
+<element name="C11" library="rcl" package="C1206K" value="10u" x="-83.82" y="-69.85"/>
+<element name="C12" library="rcl" package="C0603K" value="10u" x="-83.82" y="-74.93"/>
 <element name="R14" library="rcl" package="R0603" value="60k" x="-83.82" y="-80.01"/>
 <element name="R15" library="rcl" package="R0603" value="100k" x="-83.82" y="-85.09"/>
 <element name="R16" library="rcl" package="R0603" value="1k" x="-83.82" y="-90.17"/>
 <element name="ATT_OUT" library="thonkiconn" package="WQP-PJ301M-12_JACK" value="WQP-PJ301M-12_JACK" x="-91.44" y="-83.82"/>
 <element name="R17" library="pot-alps" package="ALPS_POT_VERTICAL" value="100k" x="-104.14" y="-86.36"/>
 <element name="R18" library="rcl" package="R0603" value="100" x="-107.95" y="-95.25"/>
+<element name="R19" library="rcl" package="R0603" value="100" x="-107.95" y="-100.33"/>
+<element name="D2" library="diode" package="DO214AA" value="1N4004 equiv" x="-106.68" y="-106.68"/>
 </elements>
 <signals>
 <signal name="N$3">
@@ -1964,6 +1966,8 @@ design rules under a new name.</description>
 <contactref element="ATT_OUT" pad="P$3"/>
 <contactref element="R15" pad="2"/>
 <contactref element="R17" pad="P$3"/>
+<contactref element="R19" pad="1"/>
+<wire x1="-91.44" y1="-90.32" x2="-108.8" y2="-100.33" width="0" layer="19" extent="1-1"/>
 <wire x1="-82.97" y1="-85.09" x2="-91.44" y2="-90.32" width="0" layer="19" extent="1-1"/>
 <wire x1="-82.945" y1="-74.93" x2="-82.97" y2="-85.09" width="0" layer="19" extent="1-1"/>
 <wire x1="-82.32" y1="-69.85" x2="-82.945" y2="-74.93" width="0" layer="19" extent="1-1"/>
@@ -2049,25 +2053,23 @@ design rules under a new name.</description>
 <wire x1="-19.05" y1="13.05" x2="-28.575" y2="21.65" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="-12V">
-<contactref element="JP1" pad="9"/>
-<contactref element="JP1" pad="10"/>
 <contactref element="C2" pad="2"/>
 <contactref element="C4" pad="2"/>
 <contactref element="IC4" pad="4"/>
+<contactref element="D2" pad="A"/>
+<wire x1="-82.945" y1="-55.88" x2="-104.13" y2="-106.68" width="0" layer="19" extent="1-1"/>
 <wire x1="-67.945" y1="-31.81" x2="-82.945" y2="-55.88" width="0" layer="19" extent="1-1"/>
 <wire x1="-60.73" y1="-30.48" x2="-67.945" y2="-31.81" width="0" layer="19" extent="1-1"/>
-<wire x1="-26.67" y1="30.48" x2="-60.73" y2="-30.48" width="0" layer="19" extent="1-1"/>
-<wire x1="-26.67" y1="33.02" x2="-26.67" y2="30.48" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$1">
 <contactref element="C7" pad="1"/>
 <contactref element="IC3" pad="3"/>
 <contactref element="C10" pad="1"/>
 <contactref element="IC4" pad="5"/>
-<contactref element="SW1" pad="3"/>
 <contactref element="R18" pad="2"/>
-<wire x1="-78.78" y1="-65.23" x2="-107.1" y2="-95.25" width="0" layer="19" extent="1-1"/>
-<wire x1="-67.945" y1="-26.61" x2="-78.78" y2="-65.23" width="0" layer="19" extent="1-1"/>
+<contactref element="SW1" pad="2"/>
+<wire x1="-81.28" y1="-65.23" x2="-107.1" y2="-95.25" width="0" layer="19" extent="1-1"/>
+<wire x1="-67.945" y1="-26.61" x2="-81.28" y2="-65.23" width="0" layer="19" extent="1-1"/>
 <wire x1="-29.845" y1="16.45" x2="-67.945" y2="-26.61" width="0" layer="19" extent="1-1"/>
 <wire x1="-44.68" y1="40.64" x2="-29.845" y2="16.45" width="0" layer="19" extent="1-1"/>
 <wire x1="-41.515" y1="52.07" x2="-44.68" y2="40.64" width="0" layer="19" extent="1-1"/>
@@ -2173,11 +2175,11 @@ design rules under a new name.</description>
 <wire x1="-80.01" y1="-34.37" x2="-73.24" y2="-45.72" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$16">
-<contactref element="SW1" pad="2"/>
 <contactref element="C12" pad="1"/>
 <contactref element="C11" pad="1"/>
+<contactref element="SW1" pad="3"/>
 <wire x1="-85.32" y1="-69.85" x2="-84.695" y2="-74.93" width="0" layer="19" extent="1-1"/>
-<wire x1="-81.28" y1="-65.23" x2="-85.32" y2="-69.85" width="0" layer="19" extent="1-1"/>
+<wire x1="-78.78" y1="-65.23" x2="-85.32" y2="-69.85" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$19">
 <contactref element="ATT_OUT" pad="P$1"/>
@@ -2213,6 +2215,18 @@ design rules under a new name.</description>
 <wire x1="-19.05" y1="29.9466" x2="-20.32" y2="29.9466" width="0" layer="19" extent="1-1"/>
 <wire x1="-16.51" y1="36.0934" x2="-19.05" y2="29.9466" width="0" layer="19" extent="1-1"/>
 <wire x1="-15.24" y1="36.0934" x2="-16.51" y2="36.0934" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$18">
+<contactref element="SW1" pad="1"/>
+<contactref element="R19" pad="2"/>
+<wire x1="-83.78" y1="-65.23" x2="-107.1" y2="-100.33" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$14">
+<contactref element="JP1" pad="10"/>
+<contactref element="JP1" pad="9"/>
+<contactref element="D2" pad="C"/>
+<wire x1="-26.67" y1="30.48" x2="-109.23" y2="-106.68" width="0" layer="19" extent="1-1"/>
+<wire x1="-26.67" y1="33.02" x2="-26.67" y2="30.48" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 </board>
