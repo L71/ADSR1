@@ -21,6 +21,15 @@ uint8_t gate_went_low=0 ;	// event: gate went low
 // at which ADC/capacitor level the attack phase should be considered done
 #define ATTACK_DONE_LVL  254	
 
+// user interface LEDs bit register
+uint8_t ui_led_bits=0b00000000;
+#define GATE_LED 			0x01			// b0:	gate indicator
+#define GATE_LEGATO_LED 	0x02			// b1:	gate legato on/off
+#define ADSR_LED 			0x04			// b2:	ADSR mode
+#define ADR_LED 			0x08			// b3:	ADR mode	(attack->decay to sustain level->release)
+#define ASR_LED				0x10			// b4:	A(S)R mode 	(attack->sustain level->release)
+#define NR_LED_BITS			5				// this number of LEDs 
+
 
 void adc_setup() {
 	// enable ADC, clock prescaler = /64
@@ -72,9 +81,11 @@ ISR(PCINT0_vect) {  	// GATE IN pin change interrupt
 
 	if (gate) {
 		gate_went_high = 1 ;
+		ui_led_bits |= GATE_LED;
 	} 
 	if (! gate) {
 		gate_went_low = 1;
+		ui_led_bits &= ~GATE_LED;
 	}
 	
 }
@@ -125,6 +136,32 @@ inline void state_update() {
 	gate_went_low=0;
 }
 
+void update_ui_leds() {
+	// reset and update ui led driver/counter chip
+	// PA4/SCK:			clock out for UI counter ship
+	// PA5/MISO:		reset out for UI counter chip
+	static uint8_t seq=0;
+	
+	PORTA &= ~_BV(PA4);	// make sure CLK is low
+	
+	if (seq == 0) {	// start at 0: reset counter chip
+		PORTA |= _BV(PA4);	// PA4 high, make sure LED is off from start
+		PORTA |= _BV(PA5);	// send reset pulse... 
+		PORTA &= ~_BV(PA5);	// ...
+	}
+	if (seq > 0) {
+		PORTA |= _BV(PA4);	// if not on first bit, pulse counter, next LED
+	}
+	
+	if ( ui_led_bits & (1<<seq)) {	// check if this LED bit is 1? 
+		PORTA &= ~_BV(PA4);  		// if so, set PA4 low -> LED lights up
+	} 
+	seq++;
+	if (seq == NR_LED_BITS) {	
+		seq=0;
+	}
+}
+
 
 ISR(TIM1_COMPA_vect) {
 	
@@ -153,6 +190,8 @@ ISR(TIM1_COMPA_vect) {
 	
 	// update ENV state machine 
 	state_update();
+	
+	update_ui_leds();
 	
 	// start next conversion
 	ADCSRA |= (1<<ADSC) ;

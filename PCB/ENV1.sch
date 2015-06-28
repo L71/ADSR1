@@ -10856,8 +10856,8 @@ Source: www.kingbright.com</description>
 <part name="GND19" library="supply1" deviceset="GND" device=""/>
 <part name="GND20" library="supply1" deviceset="GND" device=""/>
 <part name="R17" library="pot-alps" deviceset="POT_US" device="VERTICAL" value="100k"/>
-<part name="R18" library="rcl" deviceset="R-EU_" device="R0603" value="100"/>
-<part name="R19" library="rcl" deviceset="R-EU_" device="R0603" value="100"/>
+<part name="R18" library="rcl" deviceset="R-EU_" device="R1206" value="100"/>
+<part name="R19" library="rcl" deviceset="R-EU_" device="R1206" value="100"/>
 <part name="GND21" library="supply1" deviceset="GND" device=""/>
 <part name="D2" library="diode" deviceset="DIODE-" device="DO214AA" value="1N4004 equiv"/>
 </parts>
