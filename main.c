@@ -25,15 +25,31 @@ int main() {
 	DDRA |= _BV(PA3) | _BV(PA4) | _BV(PA5);
 	
 	// activate input pull-up on PA2 (mode switch) and PA6 (gate legato switch):
-	PORTB |= _BV(PA2) | _BV(PA6);
+	PORTA |= _BV(PA2) | _BV(PA6);
 
-	// activate release switch
+	// set envelope in relase/off state initially
 	sw_set_release();
 	
 	pc_int_setup();
 	adc_setup();
 	run_main_timer();
 
+
+
+	// light show! =)
+	uint8_t x,y;
+	for (x=0 ; x<3 ; x++) {
+		PORTA |= _BV(PA5);
+		PORTA &= ~_BV(PA5);
+		for (y=0 ; y<5 ; y++) {
+			if (y > 0) {
+				PORTA |= _BV(PA4);
+				PORTA &= ~_BV(PA4);
+			}
+			_delay_ms(100);
+		}
+	}
+	
 	// reset UI counter chip
 	PORTA |= _BV(PA5);
 	PORTA &= ~_BV(PA5);

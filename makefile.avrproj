@@ -28,7 +28,7 @@ clean:
 	rm -f *.o $(ELF) $(HEX) *.pyc
 
 size:
-	$(SIZE) $(ELF)
+	$(SIZE) -C $(ELF)
 	
 # AVR HW programming rules
 flash : $(ELF)

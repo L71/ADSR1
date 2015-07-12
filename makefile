@@ -1,6 +1,6 @@
 
 ### Project specs
-PROJNAME = env1
+PROJNAME = ADSR1
 
 
 CPUTYPE = attiny84

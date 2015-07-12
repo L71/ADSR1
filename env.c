@@ -30,7 +30,7 @@ uint8_t ui_led_bits=0b00000000;
 #define ASR_LED				0x10			// b4:	A(S)R mode 	(attack->sustain level->release)
 #define NR_LED_BITS			5				// this number of LEDs 
 
-
+// configure AD converter
 void adc_setup() {
 	// enable ADC, clock prescaler = /64
 	ADCSRA |= (1<<ADEN) | (1<<ADPS2) | (1<<ADPS0) ;
@@ -42,6 +42,7 @@ void adc_setup() {
 	ADCSRA |= (1<<ADSC) ;
 }
 
+// start main timer
 void run_main_timer() {	// enable 16bit timer1 + interrupts
 	OCR1AH = 0x03; // 8MHz, divider 1000 -> 8KHz timer
 	OCR1AL = 0xe8;
@@ -51,7 +52,8 @@ void run_main_timer() {	// enable 16bit timer1 + interrupts
 	TIMSK1 |= (1<<OCIE1A);
 }
 
-
+// functions to manage the 74HC4066 switches for the envelope stages
+// only ONE of three must be enabled at once.
 inline void sw_set_release() {
 	PORTB &= 0xf8;	// all switches off
 	PORTB |= _BV(PB0);	
@@ -65,11 +67,28 @@ inline void sw_set_dec_sust() {
 	PORTB |= _BV(PB2);
 }
 
+
+// GATE signal handling & interrupt
+// 
+// setup pin change interrupt
 void pc_int_setup() {
 	GIMSK |= _BV(PCIE0) ;	// enable pin change 0 interrupt 
 	PCMSK0 |= _BV(PCINT7); // enable pin change interrupts for PA7.
 }
-	
+
+// update IO and states when gate status changes
+inline void set_gate_high() {
+	gate_went_high = 1 ;
+	ui_led_bits |= GATE_LED;
+	PORTA |= _BV(PA3);
+}
+
+inline void set_gate_low() {
+	gate_went_low = 1;
+	ui_led_bits &= ~GATE_LED;
+	PORTA &= ~_BV(PA3);
+}
+
 ISR(PCINT0_vect) {  	// GATE IN pin change interrupt
 
 	uint8_t gate ; // gate input value
@@ -80,17 +99,16 @@ ISR(PCINT0_vect) {  	// GATE IN pin change interrupt
 	gate_went_low=0;
 
 	if (gate) {
-		gate_went_high = 1 ;
-		ui_led_bits |= GATE_LED;
+		set_gate_high();
 	} 
 	if (! gate) {
-		gate_went_low = 1;
-		ui_led_bits &= ~GATE_LED;
+		set_gate_low();
 	}
 	
 }
 
 
+// main envelope state machine
 inline void state_update() {
 
 	static uint8_t stage = RELEASING ; 	// curremt ENV stage
@@ -136,8 +154,8 @@ inline void state_update() {
 	gate_went_low=0;
 }
 
+// reset and update ui led driver/counter chip
 void update_ui_leds() {
-	// reset and update ui led driver/counter chip
 	// PA4/SCK:			clock out for UI counter ship
 	// PA5/MISO:		reset out for UI counter chip
 	static uint8_t seq=0;
@@ -159,6 +177,11 @@ void update_ui_leds() {
 	seq++;
 	if (seq == NR_LED_BITS) {	
 		seq=0;
+	}
+	if (PINA & _BV(PA6)) {
+		ui_led_bits |= 0x10;
+	} else {
+		ui_led_bits &= ~0x10;
 	}
 }
 

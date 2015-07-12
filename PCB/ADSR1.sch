@@ -8,20 +8,20 @@
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="yes" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="no"/>
-<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="no"/>
-<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="no"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="no"/>
-<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="no"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="no"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="no"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="no"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="no"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="no"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="no"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="no"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="no"/>
+<layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="no" active="no"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="no" active="no"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="no"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="no" active="no"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="no"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="no"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="no"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="no"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="no" active="no"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="no" active="no"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="no" active="no"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="no" active="no"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="no"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="no"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="no"/>
@@ -30,8 +30,8 @@
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="no"/>
 <layer number="35" name="tGlue" color="7" fill="4" visible="no" active="no"/>
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="no"/>
-<layer number="37" name="tTest" color="7" fill="1" visible="yes" active="no"/>
-<layer number="38" name="bTest" color="7" fill="1" visible="yes" active="no"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="no" active="no"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="no" active="no"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="no"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="no"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="no"/>
@@ -39,17 +39,17 @@
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="no"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="no"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="no"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="no"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="no"/>
-<layer number="48" name="Document" color="7" fill="1" visible="yes" active="no"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="no"/>
-<layer number="50" name="dxf" color="7" fill="1" visible="yes" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="no"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="no"/>
-<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="yes" active="no"/>
-<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="yes" active="no"/>
-<layer number="56" name="wert" color="7" fill="1" visible="yes" active="no"/>
-<layer number="57" name="tCAD" color="7" fill="1" visible="yes" active="no"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="no" active="no"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="no" active="no"/>
+<layer number="48" name="Document" color="7" fill="1" visible="no" active="no"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="no" active="no"/>
+<layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="no"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="no"/>
+<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
+<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
+<layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
+<layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
@@ -8835,6 +8835,82 @@ Based on the following sources:
 <rectangle x1="2.286" y1="-3.0988" x2="2.794" y2="-1.9558" layer="51"/>
 <rectangle x1="3.556" y1="-3.0988" x2="4.064" y2="-1.9558" layer="51"/>
 </package>
+<package name="DIL16">
+<description>&lt;b&gt;Dual In Line Package&lt;/b&gt;</description>
+<wire x1="10.16" y1="2.921" x2="-10.16" y2="2.921" width="0.1524" layer="21"/>
+<wire x1="-10.16" y1="-2.921" x2="10.16" y2="-2.921" width="0.1524" layer="21"/>
+<wire x1="10.16" y1="2.921" x2="10.16" y2="-2.921" width="0.1524" layer="21"/>
+<wire x1="-10.16" y1="2.921" x2="-10.16" y2="1.016" width="0.1524" layer="21"/>
+<wire x1="-10.16" y1="-2.921" x2="-10.16" y2="-1.016" width="0.1524" layer="21"/>
+<wire x1="-10.16" y1="1.016" x2="-10.16" y2="-1.016" width="0.1524" layer="21" curve="-180"/>
+<pad name="1" x="-8.89" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="2" x="-6.35" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="7" x="6.35" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="8" x="8.89" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="3" x="-3.81" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="4" x="-1.27" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="6" x="3.81" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="5" x="1.27" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="9" x="8.89" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="10" x="6.35" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="11" x="3.81" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="12" x="1.27" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="13" x="-1.27" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="14" x="-3.81" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="15" x="-6.35" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="16" x="-8.89" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<text x="-10.541" y="-2.921" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
+<text x="-7.493" y="-0.635" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+</package>
+<package name="SO16">
+<description>&lt;b&gt;Small Outline package&lt;/b&gt; 150 mil</description>
+<wire x1="4.699" y1="1.9558" x2="-4.699" y2="1.9558" width="0.1524" layer="21"/>
+<wire x1="4.699" y1="-1.9558" x2="5.08" y2="-1.5748" width="0.1524" layer="21" curve="90"/>
+<wire x1="-5.08" y1="1.5748" x2="-4.699" y2="1.9558" width="0.1524" layer="21" curve="-90"/>
+<wire x1="4.699" y1="1.9558" x2="5.08" y2="1.5748" width="0.1524" layer="21" curve="-90"/>
+<wire x1="-5.08" y1="-1.5748" x2="-4.699" y2="-1.9558" width="0.1524" layer="21" curve="90"/>
+<wire x1="-4.699" y1="-1.9558" x2="4.699" y2="-1.9558" width="0.1524" layer="21"/>
+<wire x1="5.08" y1="-1.5748" x2="5.08" y2="1.5748" width="0.1524" layer="21"/>
+<wire x1="-5.08" y1="1.5748" x2="-5.08" y2="0.508" width="0.1524" layer="21"/>
+<wire x1="-5.08" y1="0.508" x2="-5.08" y2="-0.508" width="0.1524" layer="21"/>
+<wire x1="-5.08" y1="-0.508" x2="-5.08" y2="-1.5748" width="0.1524" layer="21"/>
+<wire x1="-5.08" y1="0.508" x2="-5.08" y2="-0.508" width="0.1524" layer="21" curve="-180"/>
+<wire x1="-5.08" y1="-1.6002" x2="5.08" y2="-1.6002" width="0.0508" layer="21"/>
+<smd name="1" x="-4.445" y="-3.0734" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="16" x="-4.445" y="3.0734" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="2" x="-3.175" y="-3.0734" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="3" x="-1.905" y="-3.0734" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="15" x="-3.175" y="3.0734" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="14" x="-1.905" y="3.0734" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="4" x="-0.635" y="-3.0734" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="13" x="-0.635" y="3.0734" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="5" x="0.635" y="-3.0734" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="12" x="0.635" y="3.0734" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="6" x="1.905" y="-3.0734" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="7" x="3.175" y="-3.0734" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="11" x="1.905" y="3.0734" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="10" x="3.175" y="3.0734" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="8" x="4.445" y="-3.0734" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="9" x="4.445" y="3.0734" dx="0.6604" dy="2.032" layer="1"/>
+<text x="-4.064" y="-0.635" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+<text x="-5.461" y="-2.032" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
+<rectangle x1="-0.889" y1="1.9558" x2="-0.381" y2="3.0988" layer="51"/>
+<rectangle x1="-4.699" y1="-3.0988" x2="-4.191" y2="-1.9558" layer="51"/>
+<rectangle x1="-3.429" y1="-3.0988" x2="-2.921" y2="-1.9558" layer="51"/>
+<rectangle x1="-2.159" y1="-3.0734" x2="-1.651" y2="-1.9304" layer="51"/>
+<rectangle x1="-0.889" y1="-3.0988" x2="-0.381" y2="-1.9558" layer="51"/>
+<rectangle x1="-2.159" y1="1.9558" x2="-1.651" y2="3.0988" layer="51"/>
+<rectangle x1="-3.429" y1="1.9558" x2="-2.921" y2="3.0988" layer="51"/>
+<rectangle x1="-4.699" y1="1.9558" x2="-4.191" y2="3.0988" layer="51"/>
+<rectangle x1="0.381" y1="-3.0988" x2="0.889" y2="-1.9558" layer="51"/>
+<rectangle x1="1.651" y1="-3.0988" x2="2.159" y2="-1.9558" layer="51"/>
+<rectangle x1="2.921" y1="-3.0988" x2="3.429" y2="-1.9558" layer="51"/>
+<rectangle x1="4.191" y1="-3.0988" x2="4.699" y2="-1.9558" layer="51"/>
+<rectangle x1="0.381" y1="1.9558" x2="0.889" y2="3.0988" layer="51"/>
+<rectangle x1="1.651" y1="1.9558" x2="2.159" y2="3.0988" layer="51"/>
+<rectangle x1="2.921" y1="1.9558" x2="3.429" y2="3.0988" layer="51"/>
+<rectangle x1="4.191" y1="1.9558" x2="4.699" y2="3.0988" layer="51"/>
+</package>
 </packages>
 <symbols>
 <symbol name="4066">
@@ -8854,6 +8930,28 @@ Based on the following sources:
 <text x="1.905" y="-5.842" size="1.27" layer="95" rot="R90">VSS</text>
 <pin name="VSS" x="0" y="-7.62" visible="pad" length="middle" direction="pwr" rot="R90"/>
 <pin name="VDD" x="0" y="7.62" visible="pad" length="middle" direction="pwr" rot="R270"/>
+</symbol>
+<symbol name="4017">
+<wire x1="-7.62" y1="-17.78" x2="7.62" y2="-17.78" width="0.4064" layer="94"/>
+<wire x1="7.62" y1="-17.78" x2="7.62" y2="15.24" width="0.4064" layer="94"/>
+<wire x1="7.62" y1="15.24" x2="-7.62" y2="15.24" width="0.4064" layer="94"/>
+<wire x1="-7.62" y1="15.24" x2="-7.62" y2="-17.78" width="0.4064" layer="94"/>
+<text x="-7.62" y="15.875" size="1.778" layer="95">&gt;NAME</text>
+<text x="-7.62" y="-20.32" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="Q5" x="12.7" y="0" length="middle" direction="out" rot="R180"/>
+<pin name="Q1" x="12.7" y="10.16" length="middle" direction="out" rot="R180"/>
+<pin name="Q0" x="12.7" y="12.7" length="middle" direction="out" rot="R180"/>
+<pin name="Q2" x="12.7" y="7.62" length="middle" direction="out" rot="R180"/>
+<pin name="Q6" x="12.7" y="-2.54" length="middle" direction="out" rot="R180"/>
+<pin name="Q7" x="12.7" y="-5.08" length="middle" direction="out" rot="R180"/>
+<pin name="Q3" x="12.7" y="5.08" length="middle" direction="out" rot="R180"/>
+<pin name="Q8" x="12.7" y="-7.62" length="middle" direction="out" rot="R180"/>
+<pin name="Q4" x="12.7" y="2.54" length="middle" direction="out" rot="R180"/>
+<pin name="Q9" x="12.7" y="-10.16" length="middle" direction="out" rot="R180"/>
+<pin name="CO" x="12.7" y="-15.24" length="middle" direction="out" rot="R180"/>
+<pin name="ENA" x="-12.7" y="-10.16" length="middle" direction="in" function="dot"/>
+<pin name="CLK" x="-12.7" y="0" length="middle" direction="in" function="clk"/>
+<pin name="RES" x="-12.7" y="-15.24" length="middle" direction="in"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -8904,6 +9002,61 @@ Based on the following sources:
 <connect gate="D" pin="C" pad="12"/>
 <connect gate="P" pin="VDD" pad="14"/>
 <connect gate="P" pin="VSS" pad="7"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="4017" prefix="IC">
+<description>&lt;B&gt;COUNTER/DIVIDER&lt;/B&gt;</description>
+<gates>
+<gate name="A" symbol="4017" x="20.32" y="0"/>
+<gate name="P" symbol="PWRN" x="-5.08" y="0" addlevel="request"/>
+</gates>
+<devices>
+<device name="N" package="DIL16">
+<connects>
+<connect gate="A" pin="CLK" pad="14"/>
+<connect gate="A" pin="CO" pad="12"/>
+<connect gate="A" pin="ENA" pad="13"/>
+<connect gate="A" pin="Q0" pad="3"/>
+<connect gate="A" pin="Q1" pad="2"/>
+<connect gate="A" pin="Q2" pad="4"/>
+<connect gate="A" pin="Q3" pad="7"/>
+<connect gate="A" pin="Q4" pad="10"/>
+<connect gate="A" pin="Q5" pad="1"/>
+<connect gate="A" pin="Q6" pad="5"/>
+<connect gate="A" pin="Q7" pad="6"/>
+<connect gate="A" pin="Q8" pad="9"/>
+<connect gate="A" pin="Q9" pad="11"/>
+<connect gate="A" pin="RES" pad="15"/>
+<connect gate="P" pin="VDD" pad="16"/>
+<connect gate="P" pin="VSS" pad="8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="D" package="SO16">
+<connects>
+<connect gate="A" pin="CLK" pad="14"/>
+<connect gate="A" pin="CO" pad="12"/>
+<connect gate="A" pin="ENA" pad="13"/>
+<connect gate="A" pin="Q0" pad="3"/>
+<connect gate="A" pin="Q1" pad="2"/>
+<connect gate="A" pin="Q2" pad="4"/>
+<connect gate="A" pin="Q3" pad="7"/>
+<connect gate="A" pin="Q4" pad="10"/>
+<connect gate="A" pin="Q5" pad="1"/>
+<connect gate="A" pin="Q6" pad="5"/>
+<connect gate="A" pin="Q7" pad="6"/>
+<connect gate="A" pin="Q8" pad="9"/>
+<connect gate="A" pin="Q9" pad="11"/>
+<connect gate="A" pin="RES" pad="15"/>
+<connect gate="P" pin="VDD" pad="16"/>
+<connect gate="P" pin="VSS" pad="8"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -10809,9 +10962,7 @@ Source: www.kingbright.com</description>
 <part name="C8" library="rcl" deviceset="C-EU" device="C0603K" value="100n"/>
 <part name="C9" library="rcl" deviceset="C-EU" device="C0603K" value="100n"/>
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
-<part name="GND8" library="supply1" deviceset="GND" device=""/>
 <part name="P+8" library="supply1" deviceset="+5V" device=""/>
-<part name="P+9" library="supply1" deviceset="+5V" device=""/>
 <part name="R6" library="rcl" deviceset="R-EU_" device="R0603" value="1k"/>
 <part name="R7" library="rcl" deviceset="R-EU_" device="R0603" value="1k"/>
 <part name="R8" library="rcl" deviceset="R-EU_" device="R0603" value="1k"/>
@@ -10860,6 +11011,23 @@ Source: www.kingbright.com</description>
 <part name="R19" library="rcl" deviceset="R-EU_" device="R1206" value="100"/>
 <part name="GND21" library="supply1" deviceset="GND" device=""/>
 <part name="D2" library="diode" deviceset="DIODE-" device="DO214AA" value="1N4004 equiv"/>
+<part name="GATE_OUT" library="thonkiconn" deviceset="WQP-PJ301M-12_JACK" device=""/>
+<part name="R20" library="rcl" deviceset="R-EU_" device="R0603" value="1k"/>
+<part name="GND22" library="supply1" deviceset="GND" device=""/>
+<part name="SW2" library="lb_devs" deviceset="TL2285" device=""/>
+<part name="GND23" library="supply1" deviceset="GND" device=""/>
+<part name="IC5" library="40xx" deviceset="4017" device="D"/>
+<part name="GND24" library="supply1" deviceset="GND" device=""/>
+<part name="R21" library="rcl" deviceset="R-EU_" device="R0603" value="1k"/>
+<part name="C13" library="rcl" deviceset="C-EU" device="C0603K" value="100n"/>
+<part name="LED9" library="led" deviceset="LED" device="3MM"/>
+<part name="LED4" library="led" deviceset="LED" device="3MM"/>
+<part name="LED5" library="led" deviceset="LED" device="3MM"/>
+<part name="LED6" library="led" deviceset="LED" device="3MM"/>
+<part name="LED7" library="led" deviceset="LED" device="3MM"/>
+<part name="SW3" library="lb_devs" deviceset="TL2285" device=""/>
+<part name="GND8" library="supply1" deviceset="GND" device=""/>
+<part name="R22" library="rcl" deviceset="R-EU_" device="R0603" value="10k"/>
 </parts>
 <sheets>
 <sheet>
@@ -10868,7 +11036,8 @@ Source: www.kingbright.com</description>
 56k -&gt; 7.8V P-P
 60k -&gt; 8.0V P-P
 68k -&gt; 8.4V P-P</text>
-<text x="228.6" y="139.7" size="1.778" layer="91">Time X11 switch</text>
+<text x="228.6" y="137.16" size="1.778" layer="91">Time X11 switch
+TL2285 latching</text>
 <text x="203.2" y="152.4" size="1.778" layer="91" rot="R90">IC2 = CD4066 -&gt; R18 1 Ohm
 IC2 = 74HC/HCT4066 -&gt; R18 100 Ohm
 HC/HCT types have much lower on-resistance
@@ -10876,20 +11045,30 @@ and must be current-limited.</text>
 <text x="269.24" y="124.46" size="1.778" layer="91">Note:
 Only one of C7/C10 and C11/C12 need to be fitted.
 They are there to enable different form factor (0603 or 1206) caps on the PCB.</text>
+<text x="299.72" y="81.28" size="1.778" layer="91">Mode select switch
+TL2285 momentary on-(on)</text>
+<text x="182.88" y="241.3" size="1.778" layer="91">GATE signal indicator</text>
+<text x="182.88" y="236.22" size="1.778" layer="91">ADSR mode</text>
+<text x="182.88" y="233.68" size="1.778" layer="91">ADR mode</text>
+<text x="182.88" y="231.14" size="1.778" layer="91">AR mode</text>
+<text x="121.92" y="205.74" size="1.778" layer="91">CD4017 or (preferred) 74HC4017</text>
+<text x="299.72" y="50.8" size="1.778" layer="91">Gate legato switch
+TL2285 latching</text>
+<text x="182.88" y="238.76" size="1.778" layer="91">Gate legato ON</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
 <instance part="U$1" gate="G$1" x="226.06" y="43.18"/>
-<instance part="JP1" gate="A" x="22.86" y="48.26"/>
+<instance part="JP1" gate="A" x="17.78" y="40.64"/>
 <instance part="C5" gate="G$1" x="198.12" y="45.72"/>
-<instance part="IC1" gate="1" x="66.04" y="66.04"/>
-<instance part="D1" gate="G$1" x="43.18" y="66.04" smashed="yes">
-<attribute name="NAME" x="30.48" y="66.5226" size="1.778" layer="95"/>
-<attribute name="VALUE" x="30.48" y="68.8086" size="1.778" layer="96"/>
+<instance part="IC1" gate="1" x="60.96" y="58.42"/>
+<instance part="D1" gate="G$1" x="38.1" y="58.42" smashed="yes">
+<attribute name="NAME" x="25.4" y="58.9026" size="1.778" layer="95"/>
+<attribute name="VALUE" x="25.4" y="61.1886" size="1.778" layer="96"/>
 </instance>
-<instance part="GND1" gate="1" x="91.44" y="43.18"/>
-<instance part="P+1" gate="1" x="53.34" y="71.12"/>
-<instance part="P+2" gate="1" x="91.44" y="71.12"/>
+<instance part="GND1" gate="1" x="86.36" y="35.56"/>
+<instance part="P+1" gate="1" x="48.26" y="63.5"/>
+<instance part="P+2" gate="1" x="86.36" y="63.5"/>
 <instance part="P+3" gate="1" x="198.12" y="66.04"/>
 <instance part="GND2" gate="1" x="198.12" y="20.32"/>
 <instance part="U$2" gate="G$1" x="215.9" y="86.36"/>
@@ -10897,7 +11076,7 @@ They are there to enable different form factor (0603 or 1206) caps on the PCB.</
 <instance part="GND3" gate="1" x="236.22" y="76.2"/>
 <instance part="R1" gate="G$1" x="254" y="66.04" rot="R90"/>
 <instance part="P+5" gate="1" x="254" y="76.2"/>
-<instance part="P-1" gate="1" x="53.34" y="25.4"/>
+<instance part="P-1" gate="1" x="48.26" y="17.78"/>
 <instance part="IC2" gate="A" x="165.1" y="172.72"/>
 <instance part="IC2" gate="B" x="165.1" y="152.4"/>
 <instance part="IC2" gate="C" x="165.1" y="132.08"/>
@@ -10914,23 +11093,21 @@ They are there to enable different form factor (0603 or 1206) caps on the PCB.</
 <instance part="R5" gate="G$1" x="129.54" y="180.34" rot="R90"/>
 <instance part="P+7" gate="1" x="43.18" y="160.02"/>
 <instance part="GND6" gate="1" x="43.18" y="129.54"/>
-<instance part="IC3" gate="P" x="147.32" y="45.72"/>
-<instance part="IC2" gate="P" x="165.1" y="45.72"/>
-<instance part="C8" gate="G$1" x="172.72" y="48.26"/>
-<instance part="C9" gate="G$1" x="154.94" y="48.26"/>
-<instance part="GND7" gate="1" x="147.32" y="30.48"/>
-<instance part="GND8" gate="1" x="165.1" y="30.48"/>
-<instance part="P+8" gate="1" x="147.32" y="60.96"/>
-<instance part="P+9" gate="1" x="165.1" y="60.96"/>
-<instance part="R6" gate="G$1" x="299.72" y="66.04" rot="R90"/>
-<instance part="R7" gate="G$1" x="309.88" y="66.04" rot="R90"/>
-<instance part="R8" gate="G$1" x="320.04" y="66.04" rot="R90"/>
-<instance part="LED1" gate="G$1" x="299.72" y="53.34"/>
-<instance part="LED2" gate="G$1" x="309.88" y="53.34"/>
-<instance part="LED3" gate="G$1" x="320.04" y="53.34"/>
-<instance part="GND9" gate="1" x="299.72" y="40.64"/>
-<instance part="GND10" gate="1" x="309.88" y="40.64"/>
-<instance part="GND11" gate="1" x="320.04" y="40.64"/>
+<instance part="IC3" gate="P" x="132.08" y="45.72"/>
+<instance part="IC2" gate="P" x="149.86" y="45.72"/>
+<instance part="C8" gate="G$1" x="157.48" y="48.26"/>
+<instance part="C9" gate="G$1" x="139.7" y="48.26"/>
+<instance part="GND7" gate="1" x="132.08" y="30.48"/>
+<instance part="P+8" gate="1" x="132.08" y="60.96"/>
+<instance part="R6" gate="G$1" x="340.36" y="63.5" rot="R90"/>
+<instance part="R7" gate="G$1" x="350.52" y="63.5" rot="R90"/>
+<instance part="R8" gate="G$1" x="360.68" y="63.5" rot="R90"/>
+<instance part="LED1" gate="G$1" x="340.36" y="50.8"/>
+<instance part="LED2" gate="G$1" x="350.52" y="50.8"/>
+<instance part="LED3" gate="G$1" x="360.68" y="50.8"/>
+<instance part="GND9" gate="1" x="340.36" y="38.1"/>
+<instance part="GND10" gate="1" x="350.52" y="38.1"/>
+<instance part="GND11" gate="1" x="360.68" y="38.1"/>
 <instance part="C10" gate="G$1" x="210.82" y="134.62"/>
 <instance part="GND12" gate="1" x="210.82" y="119.38"/>
 <instance part="GATE_IN" gate="G$1" x="40.64" y="200.66" rot="R180"/>
@@ -10940,9 +11117,9 @@ They are there to enable different form factor (0603 or 1206) caps on the PCB.</
 <instance part="P+10" gate="1" x="76.2" y="226.06"/>
 <instance part="GND13" gate="1" x="76.2" y="185.42"/>
 <instance part="GND14" gate="1" x="50.8" y="210.82" rot="R180"/>
-<instance part="C6" gate="G$1" x="78.74" y="58.42"/>
-<instance part="C1" gate="G$1" x="53.34" y="58.42"/>
-<instance part="C2" gate="G$1" x="53.34" y="40.64"/>
+<instance part="C6" gate="G$1" x="73.66" y="50.8"/>
+<instance part="C1" gate="G$1" x="48.26" y="50.8"/>
+<instance part="C2" gate="G$1" x="48.26" y="33.02"/>
 <instance part="IC4" gate="A" x="269.24" y="215.9"/>
 <instance part="IC4" gate="B" x="269.24" y="185.42"/>
 <instance part="R11" gate="G$1" x="269.24" y="175.26" rot="R180"/>
@@ -10951,12 +11128,12 @@ They are there to enable different form factor (0603 or 1206) caps on the PCB.</
 <instance part="GND15" gate="1" x="241.3" y="170.18"/>
 <instance part="OUT" gate="G$1" x="307.34" y="182.88"/>
 <instance part="GND16" gate="1" x="299.72" y="175.26"/>
-<instance part="IC4" gate="P" x="119.38" y="45.72"/>
-<instance part="C3" gate="G$1" x="127" y="55.88"/>
-<instance part="C4" gate="G$1" x="127" y="38.1"/>
-<instance part="P+11" gate="1" x="119.38" y="66.04"/>
-<instance part="P-2" gate="1" x="119.38" y="25.4"/>
-<instance part="GND17" gate="1" x="134.62" y="40.64"/>
+<instance part="IC4" gate="P" x="104.14" y="45.72"/>
+<instance part="C3" gate="G$1" x="111.76" y="55.88"/>
+<instance part="C4" gate="G$1" x="111.76" y="38.1"/>
+<instance part="P+11" gate="1" x="104.14" y="66.04"/>
+<instance part="P-2" gate="1" x="104.14" y="25.4"/>
+<instance part="GND17" gate="1" x="119.38" y="40.64"/>
 <instance part="SW1" gate="G$1" x="238.76" y="124.46" rot="MR0"/>
 <instance part="C11" gate="G$1" x="259.08" y="121.92"/>
 <instance part="C12" gate="G$1" x="251.46" y="121.92"/>
@@ -10971,10 +11148,28 @@ They are there to enable different form factor (0603 or 1206) caps on the PCB.</
 <instance part="R18" gate="G$1" x="195.58" y="144.78"/>
 <instance part="R19" gate="G$1" x="226.06" y="116.84" rot="R90"/>
 <instance part="GND21" gate="1" x="226.06" y="106.68"/>
-<instance part="D2" gate="G$1" x="43.18" y="30.48" smashed="yes" rot="R180">
-<attribute name="NAME" x="55.88" y="29.9974" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="55.88" y="27.7114" size="1.778" layer="96" rot="R180"/>
+<instance part="D2" gate="G$1" x="38.1" y="22.86" smashed="yes" rot="R180">
+<attribute name="NAME" x="50.8" y="22.3774" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="50.8" y="20.0914" size="1.778" layer="96" rot="R180"/>
 </instance>
+<instance part="GATE_OUT" gate="G$1" x="307.34" y="101.6"/>
+<instance part="R20" gate="G$1" x="289.56" y="104.14" rot="R180"/>
+<instance part="GND22" gate="1" x="299.72" y="93.98"/>
+<instance part="SW2" gate="G$1" x="309.88" y="68.58"/>
+<instance part="GND23" gate="1" x="325.12" y="66.04"/>
+<instance part="IC5" gate="A" x="137.16" y="228.6"/>
+<instance part="IC5" gate="P" x="167.64" y="45.72"/>
+<instance part="GND24" gate="1" x="111.76" y="218.44" rot="R270"/>
+<instance part="R21" gate="G$1" x="137.16" y="248.92" rot="R180"/>
+<instance part="C13" gate="G$1" x="175.26" y="48.26"/>
+<instance part="LED9" gate="G$1" x="160.02" y="238.76" rot="R90"/>
+<instance part="LED4" gate="G$1" x="170.18" y="236.22" rot="R90"/>
+<instance part="LED5" gate="G$1" x="160.02" y="233.68" rot="R90"/>
+<instance part="LED6" gate="G$1" x="170.18" y="231.14" rot="R90"/>
+<instance part="LED7" gate="G$1" x="170.18" y="241.3" rot="R90"/>
+<instance part="SW3" gate="G$1" x="309.88" y="38.1"/>
+<instance part="GND8" gate="1" x="325.12" y="35.56"/>
+<instance part="R22" gate="G$1" x="292.1" y="43.18" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -10983,23 +11178,23 @@ They are there to enable different form factor (0603 or 1206) caps on the PCB.</
 <segment>
 <pinref part="JP1" gate="A" pin="1"/>
 <pinref part="JP1" gate="A" pin="2"/>
-<wire x1="20.32" y1="53.34" x2="27.94" y2="53.34" width="0.1524" layer="91"/>
-<wire x1="27.94" y1="53.34" x2="35.56" y2="53.34" width="0.1524" layer="91"/>
-<wire x1="35.56" y1="53.34" x2="35.56" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="15.24" y1="45.72" x2="22.86" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="45.72" x2="30.48" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="45.72" x2="30.48" y2="58.42" width="0.1524" layer="91"/>
 <pinref part="D1" gate="G$1" pin="A"/>
-<wire x1="40.64" y1="66.04" x2="35.56" y2="66.04" width="0.1524" layer="91"/>
-<junction x="27.94" y="53.34"/>
+<wire x1="35.56" y1="58.42" x2="30.48" y2="58.42" width="0.1524" layer="91"/>
+<junction x="22.86" y="45.72"/>
 </segment>
 </net>
 <net name="+5V" class="0">
 <segment>
 <pinref part="P+2" gate="1" pin="+5V"/>
-<wire x1="91.44" y1="68.58" x2="91.44" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="60.96" x2="86.36" y2="58.42" width="0.1524" layer="91"/>
 <pinref part="IC1" gate="1" pin="OUT"/>
-<wire x1="73.66" y1="66.04" x2="78.74" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="78.74" y1="66.04" x2="91.44" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="78.74" y1="60.96" x2="78.74" y2="66.04" width="0.1524" layer="91"/>
-<junction x="78.74" y="66.04"/>
+<wire x1="68.58" y1="58.42" x2="73.66" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="58.42" x2="86.36" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="53.34" x2="73.66" y2="58.42" width="0.1524" layer="91"/>
+<junction x="73.66" y="58.42"/>
 <pinref part="C6" gate="G$1" pin="1"/>
 </segment>
 <segment>
@@ -11029,23 +11224,29 @@ They are there to enable different form factor (0603 or 1206) caps on the PCB.</
 </segment>
 <segment>
 <pinref part="IC3" gate="P" pin="V+"/>
-<wire x1="147.32" y1="53.34" x2="147.32" y2="55.88" width="0.1524" layer="91"/>
-<wire x1="147.32" y1="55.88" x2="147.32" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="147.32" y1="55.88" x2="154.94" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="53.34" x2="132.08" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="55.88" x2="132.08" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="55.88" x2="139.7" y2="55.88" width="0.1524" layer="91"/>
 <pinref part="C9" gate="G$1" pin="1"/>
-<wire x1="154.94" y1="55.88" x2="154.94" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="55.88" x2="139.7" y2="50.8" width="0.1524" layer="91"/>
 <pinref part="P+8" gate="1" pin="+5V"/>
-<junction x="147.32" y="55.88"/>
-</segment>
-<segment>
+<junction x="132.08" y="55.88"/>
 <pinref part="IC2" gate="P" pin="VDD"/>
-<wire x1="165.1" y1="53.34" x2="165.1" y2="55.88" width="0.1524" layer="91"/>
-<wire x1="165.1" y1="55.88" x2="165.1" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="165.1" y1="55.88" x2="172.72" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="149.86" y1="53.34" x2="149.86" y2="55.88" width="0.1524" layer="91"/>
 <pinref part="C8" gate="G$1" pin="1"/>
-<wire x1="172.72" y1="55.88" x2="172.72" y2="50.8" width="0.1524" layer="91"/>
-<pinref part="P+9" gate="1" pin="+5V"/>
-<junction x="165.1" y="55.88"/>
+<wire x1="157.48" y1="55.88" x2="157.48" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="55.88" x2="149.86" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="149.86" y1="55.88" x2="157.48" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="157.48" y1="55.88" x2="167.64" y2="55.88" width="0.1524" layer="91"/>
+<pinref part="IC5" gate="P" pin="VDD"/>
+<wire x1="167.64" y1="55.88" x2="167.64" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="167.64" y1="55.88" x2="175.26" y2="55.88" width="0.1524" layer="91"/>
+<pinref part="C13" gate="G$1" pin="1"/>
+<wire x1="175.26" y1="55.88" x2="175.26" y2="50.8" width="0.1524" layer="91"/>
+<junction x="139.7" y="55.88"/>
+<junction x="149.86" y="55.88"/>
+<junction x="157.48" y="55.88"/>
+<junction x="167.64" y="55.88"/>
 </segment>
 <segment>
 <pinref part="R10" gate="G$1" pin="1"/>
@@ -11062,37 +11263,37 @@ They are there to enable different form factor (0603 or 1206) caps on the PCB.</
 <net name="GND" class="0">
 <segment>
 <pinref part="GND1" gate="1" pin="GND"/>
-<wire x1="91.44" y1="45.72" x2="91.44" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="38.1" x2="86.36" y2="40.64" width="0.1524" layer="91"/>
 <pinref part="JP1" gate="A" pin="3"/>
 <pinref part="JP1" gate="A" pin="4"/>
-<wire x1="20.32" y1="50.8" x2="27.94" y2="50.8" width="0.1524" layer="91"/>
-<wire x1="27.94" y1="50.8" x2="35.56" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="15.24" y1="43.18" x2="22.86" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="43.18" x2="30.48" y2="43.18" width="0.1524" layer="91"/>
 <pinref part="JP1" gate="A" pin="5"/>
 <pinref part="JP1" gate="A" pin="6"/>
-<wire x1="20.32" y1="48.26" x2="27.94" y2="48.26" width="0.1524" layer="91"/>
-<wire x1="27.94" y1="48.26" x2="35.56" y2="48.26" width="0.1524" layer="91"/>
-<wire x1="35.56" y1="50.8" x2="35.56" y2="48.26" width="0.1524" layer="91"/>
-<wire x1="35.56" y1="48.26" x2="35.56" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="15.24" y1="40.64" x2="22.86" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="40.64" x2="30.48" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="43.18" x2="30.48" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="40.64" x2="30.48" y2="38.1" width="0.1524" layer="91"/>
 <pinref part="JP1" gate="A" pin="8"/>
-<wire x1="35.56" y1="45.72" x2="27.94" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="38.1" x2="22.86" y2="38.1" width="0.1524" layer="91"/>
 <pinref part="JP1" gate="A" pin="7"/>
-<wire x1="20.32" y1="45.72" x2="27.94" y2="45.72" width="0.1524" layer="91"/>
-<wire x1="35.56" y1="48.26" x2="53.34" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="15.24" y1="38.1" x2="22.86" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="40.64" x2="48.26" y2="40.64" width="0.1524" layer="91"/>
 <pinref part="IC1" gate="1" pin="GND"/>
-<wire x1="53.34" y1="48.26" x2="66.04" y2="48.26" width="0.1524" layer="91"/>
-<wire x1="66.04" y1="48.26" x2="78.74" y2="48.26" width="0.1524" layer="91"/>
-<wire x1="78.74" y1="48.26" x2="91.44" y2="48.26" width="0.1524" layer="91"/>
-<wire x1="66.04" y1="58.42" x2="66.04" y2="48.26" width="0.1524" layer="91"/>
-<wire x1="53.34" y1="53.34" x2="53.34" y2="48.26" width="0.1524" layer="91"/>
-<junction x="27.94" y="50.8"/>
-<junction x="27.94" y="48.26"/>
-<junction x="27.94" y="45.72"/>
-<junction x="35.56" y="48.26"/>
-<junction x="66.04" y="48.26"/>
-<junction x="53.34" y="48.26"/>
-<wire x1="53.34" y1="43.18" x2="53.34" y2="48.26" width="0.1524" layer="91"/>
-<wire x1="78.74" y1="53.34" x2="78.74" y2="48.26" width="0.1524" layer="91"/>
-<junction x="78.74" y="48.26"/>
+<wire x1="48.26" y1="40.64" x2="60.96" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="40.64" x2="73.66" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="40.64" x2="86.36" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="50.8" x2="60.96" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="45.72" x2="48.26" y2="40.64" width="0.1524" layer="91"/>
+<junction x="22.86" y="43.18"/>
+<junction x="22.86" y="40.64"/>
+<junction x="22.86" y="38.1"/>
+<junction x="30.48" y="40.64"/>
+<junction x="60.96" y="40.64"/>
+<junction x="48.26" y="40.64"/>
+<wire x1="48.26" y1="35.56" x2="48.26" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="45.72" x2="73.66" y2="40.64" width="0.1524" layer="91"/>
+<junction x="73.66" y="40.64"/>
 <pinref part="C6" gate="G$1" pin="2"/>
 <pinref part="C1" gate="G$1" pin="2"/>
 <pinref part="C2" gate="G$1" pin="1"/>
@@ -11124,38 +11325,44 @@ They are there to enable different form factor (0603 or 1206) caps on the PCB.</
 </segment>
 <segment>
 <pinref part="IC3" gate="P" pin="V-"/>
-<wire x1="147.32" y1="38.1" x2="147.32" y2="35.56" width="0.1524" layer="91"/>
-<wire x1="147.32" y1="35.56" x2="147.32" y2="33.02" width="0.1524" layer="91"/>
-<wire x1="147.32" y1="35.56" x2="154.94" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="38.1" x2="132.08" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="35.56" x2="132.08" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="35.56" x2="139.7" y2="35.56" width="0.1524" layer="91"/>
 <pinref part="C9" gate="G$1" pin="2"/>
-<wire x1="154.94" y1="35.56" x2="154.94" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="35.56" x2="139.7" y2="43.18" width="0.1524" layer="91"/>
 <pinref part="GND7" gate="1" pin="GND"/>
-<junction x="147.32" y="35.56"/>
-</segment>
-<segment>
+<junction x="132.08" y="35.56"/>
 <pinref part="IC2" gate="P" pin="VSS"/>
-<wire x1="165.1" y1="38.1" x2="165.1" y2="35.56" width="0.1524" layer="91"/>
-<wire x1="165.1" y1="35.56" x2="165.1" y2="33.02" width="0.1524" layer="91"/>
-<wire x1="165.1" y1="35.56" x2="172.72" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="149.86" y1="38.1" x2="149.86" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="149.86" y1="35.56" x2="157.48" y2="35.56" width="0.1524" layer="91"/>
 <pinref part="C8" gate="G$1" pin="2"/>
-<wire x1="172.72" y1="35.56" x2="172.72" y2="43.18" width="0.1524" layer="91"/>
-<pinref part="GND8" gate="1" pin="GND"/>
-<junction x="165.1" y="35.56"/>
+<wire x1="157.48" y1="35.56" x2="157.48" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="35.56" x2="149.86" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="157.48" y1="35.56" x2="167.64" y2="35.56" width="0.1524" layer="91"/>
+<pinref part="IC5" gate="P" pin="VSS"/>
+<wire x1="167.64" y1="35.56" x2="167.64" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="167.64" y1="35.56" x2="175.26" y2="35.56" width="0.1524" layer="91"/>
+<pinref part="C13" gate="G$1" pin="2"/>
+<wire x1="175.26" y1="35.56" x2="175.26" y2="43.18" width="0.1524" layer="91"/>
+<junction x="139.7" y="35.56"/>
+<junction x="149.86" y="35.56"/>
+<junction x="157.48" y="35.56"/>
+<junction x="167.64" y="35.56"/>
 </segment>
 <segment>
 <pinref part="LED1" gate="G$1" pin="C"/>
 <pinref part="GND9" gate="1" pin="GND"/>
-<wire x1="299.72" y1="48.26" x2="299.72" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="340.36" y1="45.72" x2="340.36" y2="40.64" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND10" gate="1" pin="GND"/>
 <pinref part="LED2" gate="G$1" pin="C"/>
-<wire x1="309.88" y1="43.18" x2="309.88" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="350.52" y1="40.64" x2="350.52" y2="45.72" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="LED3" gate="G$1" pin="C"/>
 <pinref part="GND11" gate="1" pin="GND"/>
-<wire x1="320.04" y1="48.26" x2="320.04" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="360.68" y1="45.72" x2="360.68" y2="40.64" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C10" gate="G$1" pin="2"/>
@@ -11198,12 +11405,12 @@ They are there to enable different form factor (0603 or 1206) caps on the PCB.</
 <segment>
 <pinref part="C3" gate="G$1" pin="2"/>
 <pinref part="C4" gate="G$1" pin="1"/>
-<wire x1="127" y1="50.8" x2="127" y2="45.72" width="0.1524" layer="91"/>
-<wire x1="127" y1="40.64" x2="127" y2="45.72" width="0.1524" layer="91"/>
-<wire x1="127" y1="45.72" x2="134.62" y2="45.72" width="0.1524" layer="91"/>
-<wire x1="134.62" y1="45.72" x2="134.62" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="50.8" x2="111.76" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="40.64" x2="111.76" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="45.72" x2="119.38" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="119.38" y1="45.72" x2="119.38" y2="43.18" width="0.1524" layer="91"/>
 <pinref part="GND17" gate="1" pin="GND"/>
-<junction x="127" y="45.72"/>
+<junction x="111.76" y="45.72"/>
 </segment>
 <segment>
 <pinref part="C11" gate="G$1" pin="2"/>
@@ -11237,28 +11444,51 @@ They are there to enable different form factor (0603 or 1206) caps on the PCB.</
 <pinref part="R19" gate="G$1" pin="1"/>
 <wire x1="226.06" y1="109.22" x2="226.06" y2="111.76" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="GATE_OUT" gate="G$1" pin="1"/>
+<wire x1="302.26" y1="99.06" x2="299.72" y2="99.06" width="0.1524" layer="91"/>
+<pinref part="GND22" gate="1" pin="GND"/>
+<wire x1="299.72" y1="99.06" x2="299.72" y2="96.52" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="SW2" gate="G$1" pin="P2"/>
+<wire x1="317.5" y1="71.12" x2="325.12" y2="71.12" width="0.1524" layer="91"/>
+<pinref part="GND23" gate="1" pin="GND"/>
+<wire x1="325.12" y1="71.12" x2="325.12" y2="68.58" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="IC5" gate="A" pin="ENA"/>
+<pinref part="GND24" gate="1" pin="GND"/>
+<wire x1="124.46" y1="218.44" x2="114.3" y2="218.44" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND8" gate="1" pin="GND"/>
+<wire x1="325.12" y1="38.1" x2="325.12" y2="40.64" width="0.1524" layer="91"/>
+<pinref part="SW3" gate="G$1" pin="P2"/>
+<wire x1="325.12" y1="40.64" x2="317.5" y2="40.64" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="+12V" class="0">
 <segment>
 <pinref part="IC1" gate="1" pin="IN"/>
-<wire x1="53.34" y1="66.04" x2="58.42" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="53.34" y1="60.96" x2="53.34" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="58.42" x2="53.34" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="53.34" x2="48.26" y2="58.42" width="0.1524" layer="91"/>
 <pinref part="D1" gate="G$1" pin="C"/>
-<wire x1="45.72" y1="66.04" x2="53.34" y2="66.04" width="0.1524" layer="91"/>
-<junction x="53.34" y="66.04"/>
+<wire x1="40.64" y1="58.42" x2="48.26" y2="58.42" width="0.1524" layer="91"/>
+<junction x="48.26" y="58.42"/>
 <pinref part="P+1" gate="1" pin="+12V"/>
-<wire x1="53.34" y1="68.58" x2="53.34" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="60.96" x2="48.26" y2="58.42" width="0.1524" layer="91"/>
 <pinref part="C1" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <pinref part="IC4" gate="P" pin="V+"/>
-<wire x1="119.38" y1="53.34" x2="119.38" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="53.34" x2="104.14" y2="60.96" width="0.1524" layer="91"/>
 <pinref part="C3" gate="G$1" pin="1"/>
-<wire x1="127" y1="58.42" x2="127" y2="60.96" width="0.1524" layer="91"/>
-<wire x1="127" y1="60.96" x2="119.38" y2="60.96" width="0.1524" layer="91"/>
-<wire x1="119.38" y1="60.96" x2="119.38" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="58.42" x2="111.76" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="60.96" x2="104.14" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="60.96" x2="104.14" y2="63.5" width="0.1524" layer="91"/>
 <pinref part="P+11" gate="1" pin="+12V"/>
-<junction x="119.38" y="60.96"/>
+<junction x="104.14" y="60.96"/>
 </segment>
 </net>
 <net name="MOSI" class="0">
@@ -11272,6 +11502,11 @@ They are there to enable different form factor (0603 or 1206) caps on the PCB.</
 <wire x1="251.46" y1="43.18" x2="259.08" y2="43.18" width="0.1524" layer="91"/>
 <label x="259.08" y="43.18" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="R22" gate="G$1" pin="2"/>
+<wire x1="287.02" y1="43.18" x2="281.94" y2="43.18" width="0.1524" layer="91"/>
+<label x="281.94" y="43.18" size="1.778" layer="95" rot="R180"/>
+</segment>
 </net>
 <net name="SCK" class="0">
 <segment>
@@ -11283,6 +11518,16 @@ They are there to enable different form factor (0603 or 1206) caps on the PCB.</
 <pinref part="U$1" gate="G$1" pin="(PCINT4/T1/SCL/USCK/ADC4)PA4"/>
 <wire x1="251.46" y1="38.1" x2="259.08" y2="38.1" width="0.1524" layer="91"/>
 <label x="259.08" y="38.1" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="IC5" gate="A" pin="CLK"/>
+<wire x1="124.46" y1="228.6" x2="121.92" y2="228.6" width="0.1524" layer="91"/>
+<label x="116.84" y="228.6" size="1.778" layer="95" rot="R180"/>
+<wire x1="121.92" y1="228.6" x2="116.84" y2="228.6" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="228.6" x2="121.92" y2="248.92" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="248.92" x2="132.08" y2="248.92" width="0.1524" layer="91"/>
+<pinref part="R21" gate="G$1" pin="2"/>
+<junction x="121.92" y="228.6"/>
 </segment>
 </net>
 <net name="RESET" class="0">
@@ -11311,6 +11556,11 @@ They are there to enable different form factor (0603 or 1206) caps on the PCB.</
 <pinref part="U$2" gate="G$1" pin="1"/>
 <wire x1="208.28" y1="88.9" x2="200.66" y2="88.9" width="0.1524" layer="91"/>
 <label x="200.66" y="88.9" size="1.778" layer="95" rot="R180"/>
+</segment>
+<segment>
+<pinref part="IC5" gate="A" pin="RES"/>
+<wire x1="124.46" y1="213.36" x2="116.84" y2="213.36" width="0.1524" layer="91"/>
+<label x="116.84" y="213.36" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
 <net name="CAP_SENSE" class="0">
@@ -11352,21 +11602,21 @@ They are there to enable different form factor (0603 or 1206) caps on the PCB.</
 <segment>
 <pinref part="P-1" gate="1" pin="-12V"/>
 <pinref part="C2" gate="G$1" pin="2"/>
-<wire x1="53.34" y1="35.56" x2="53.34" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="27.94" x2="48.26" y2="22.86" width="0.1524" layer="91"/>
 <pinref part="D2" gate="G$1" pin="A"/>
-<wire x1="53.34" y1="30.48" x2="53.34" y2="27.94" width="0.1524" layer="91"/>
-<wire x1="45.72" y1="30.48" x2="53.34" y2="30.48" width="0.1524" layer="91"/>
-<junction x="53.34" y="30.48"/>
+<wire x1="48.26" y1="22.86" x2="48.26" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="22.86" x2="48.26" y2="22.86" width="0.1524" layer="91"/>
+<junction x="48.26" y="22.86"/>
 </segment>
 <segment>
 <pinref part="C4" gate="G$1" pin="2"/>
-<wire x1="127" y1="33.02" x2="127" y2="30.48" width="0.1524" layer="91"/>
-<wire x1="127" y1="30.48" x2="119.38" y2="30.48" width="0.1524" layer="91"/>
-<wire x1="119.38" y1="30.48" x2="119.38" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="33.02" x2="111.76" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="30.48" x2="104.14" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="30.48" x2="104.14" y2="27.94" width="0.1524" layer="91"/>
 <pinref part="IC4" gate="P" pin="V-"/>
-<wire x1="119.38" y1="38.1" x2="119.38" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="38.1" x2="104.14" y2="30.48" width="0.1524" layer="91"/>
 <pinref part="P-2" gate="1" pin="-12V"/>
-<junction x="119.38" y="30.48"/>
+<junction x="104.14" y="30.48"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -11410,8 +11660,8 @@ They are there to enable different form factor (0603 or 1206) caps on the PCB.</
 </segment>
 <segment>
 <pinref part="R7" gate="G$1" pin="2"/>
-<wire x1="309.88" y1="71.12" x2="309.88" y2="78.74" width="0.1524" layer="91"/>
-<label x="309.88" y="78.74" size="1.778" layer="95"/>
+<wire x1="350.52" y1="68.58" x2="350.52" y2="76.2" width="0.1524" layer="91"/>
+<label x="350.52" y="76.2" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$7" class="0">
@@ -11441,8 +11691,8 @@ They are there to enable different form factor (0603 or 1206) caps on the PCB.</
 </segment>
 <segment>
 <pinref part="R8" gate="G$1" pin="2"/>
-<wire x1="320.04" y1="71.12" x2="320.04" y2="76.2" width="0.1524" layer="91"/>
-<label x="320.04" y="76.2" size="1.778" layer="95"/>
+<wire x1="360.68" y1="68.58" x2="360.68" y2="73.66" width="0.1524" layer="91"/>
+<label x="360.68" y="73.66" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="RELEASE" class="0">
@@ -11458,8 +11708,8 @@ They are there to enable different form factor (0603 or 1206) caps on the PCB.</
 </segment>
 <segment>
 <pinref part="R6" gate="G$1" pin="2"/>
-<wire x1="299.72" y1="71.12" x2="299.72" y2="81.28" width="0.1524" layer="91"/>
-<label x="299.72" y="81.28" size="1.778" layer="95"/>
+<wire x1="340.36" y1="68.58" x2="340.36" y2="78.74" width="0.1524" layer="91"/>
+<label x="340.36" y="78.74" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GATE_IN" class="0">
@@ -11481,21 +11731,21 @@ They are there to enable different form factor (0603 or 1206) caps on the PCB.</
 <segment>
 <pinref part="R8" gate="G$1" pin="1"/>
 <pinref part="LED3" gate="G$1" pin="A"/>
-<wire x1="320.04" y1="60.96" x2="320.04" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="360.68" y1="58.42" x2="360.68" y2="53.34" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$8" class="0">
 <segment>
 <pinref part="R7" gate="G$1" pin="1"/>
 <pinref part="LED2" gate="G$1" pin="A"/>
-<wire x1="309.88" y1="60.96" x2="309.88" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="350.52" y1="58.42" x2="350.52" y2="53.34" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$9" class="0">
 <segment>
 <pinref part="R6" gate="G$1" pin="1"/>
 <pinref part="LED1" gate="G$1" pin="A"/>
-<wire x1="299.72" y1="60.96" x2="299.72" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="340.36" y1="58.42" x2="340.36" y2="53.34" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$5" class="0">
@@ -11666,12 +11916,110 @@ They are there to enable different form factor (0603 or 1206) caps on the PCB.</
 <segment>
 <pinref part="JP1" gate="A" pin="9"/>
 <pinref part="JP1" gate="A" pin="10"/>
-<wire x1="20.32" y1="43.18" x2="27.94" y2="43.18" width="0.1524" layer="91"/>
-<wire x1="27.94" y1="43.18" x2="35.56" y2="43.18" width="0.1524" layer="91"/>
-<wire x1="35.56" y1="43.18" x2="35.56" y2="30.48" width="0.1524" layer="91"/>
-<junction x="27.94" y="43.18"/>
+<wire x1="15.24" y1="35.56" x2="22.86" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="35.56" x2="30.48" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="35.56" x2="30.48" y2="22.86" width="0.1524" layer="91"/>
+<junction x="22.86" y="35.56"/>
 <pinref part="D2" gate="G$1" pin="C"/>
-<wire x1="40.64" y1="30.48" x2="35.56" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="22.86" x2="30.48" y2="22.86" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="GATE_OUT" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="(PCINT3/T0/ADC3)PA3"/>
+<wire x1="251.46" y1="35.56" x2="259.08" y2="35.56" width="0.1524" layer="91"/>
+<label x="259.08" y="35.56" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="R20" gate="G$1" pin="2"/>
+<wire x1="284.48" y1="104.14" x2="279.4" y2="104.14" width="0.1524" layer="91"/>
+<label x="279.4" y="104.14" size="1.778" layer="95" rot="R180"/>
+</segment>
+</net>
+<net name="N$23" class="0">
+<segment>
+<pinref part="GATE_OUT" gate="G$1" pin="2"/>
+<pinref part="R20" gate="G$1" pin="1"/>
+<wire x1="302.26" y1="104.14" x2="294.64" y2="104.14" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="MODE_SW" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="(PCINT2/AIN1/ADC2)PA2"/>
+<wire x1="251.46" y1="33.02" x2="259.08" y2="33.02" width="0.1524" layer="91"/>
+<label x="259.08" y="33.02" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="SW2" gate="G$1" pin="P3"/>
+<wire x1="302.26" y1="73.66" x2="297.18" y2="73.66" width="0.1524" layer="91"/>
+<label x="297.18" y="73.66" size="1.778" layer="95" rot="R180"/>
+</segment>
+</net>
+<net name="N$22" class="0">
+<segment>
+<pinref part="IC5" gate="A" pin="Q1"/>
+<wire x1="149.86" y1="238.76" x2="157.48" y2="238.76" width="0.1524" layer="91"/>
+<pinref part="LED9" gate="G$1" pin="A"/>
+</segment>
+</net>
+<net name="N$25" class="0">
+<segment>
+<pinref part="IC5" gate="A" pin="Q2"/>
+<wire x1="167.64" y1="236.22" x2="149.86" y2="236.22" width="0.1524" layer="91"/>
+<pinref part="LED4" gate="G$1" pin="A"/>
+</segment>
+</net>
+<net name="N$27" class="0">
+<segment>
+<pinref part="IC5" gate="A" pin="Q4"/>
+<wire x1="167.64" y1="231.14" x2="149.86" y2="231.14" width="0.1524" layer="91"/>
+<pinref part="LED6" gate="G$1" pin="A"/>
+</segment>
+</net>
+<net name="N$28" class="0">
+<segment>
+<pinref part="R21" gate="G$1" pin="1"/>
+<wire x1="142.24" y1="248.92" x2="180.34" y2="248.92" width="0.1524" layer="91"/>
+<wire x1="180.34" y1="248.92" x2="180.34" y2="241.3" width="0.1524" layer="91"/>
+<wire x1="180.34" y1="241.3" x2="180.34" y2="238.76" width="0.1524" layer="91"/>
+<wire x1="180.34" y1="238.76" x2="180.34" y2="236.22" width="0.1524" layer="91"/>
+<wire x1="180.34" y1="236.22" x2="180.34" y2="233.68" width="0.1524" layer="91"/>
+<wire x1="180.34" y1="233.68" x2="180.34" y2="231.14" width="0.1524" layer="91"/>
+<wire x1="180.34" y1="231.14" x2="175.26" y2="231.14" width="0.1524" layer="91"/>
+<wire x1="175.26" y1="236.22" x2="180.34" y2="236.22" width="0.1524" layer="91"/>
+<wire x1="165.1" y1="238.76" x2="180.34" y2="238.76" width="0.1524" layer="91"/>
+<junction x="180.34" y="238.76"/>
+<junction x="180.34" y="236.22"/>
+<pinref part="LED9" gate="G$1" pin="C"/>
+<pinref part="LED4" gate="G$1" pin="C"/>
+<pinref part="LED6" gate="G$1" pin="C"/>
+<pinref part="LED5" gate="G$1" pin="C"/>
+<wire x1="165.1" y1="233.68" x2="180.34" y2="233.68" width="0.1524" layer="91"/>
+<junction x="180.34" y="233.68"/>
+<pinref part="LED7" gate="G$1" pin="C"/>
+<wire x1="175.26" y1="241.3" x2="180.34" y2="241.3" width="0.1524" layer="91"/>
+<junction x="180.34" y="241.3"/>
+</segment>
+</net>
+<net name="N$26" class="0">
+<segment>
+<pinref part="IC5" gate="A" pin="Q3"/>
+<pinref part="LED5" gate="G$1" pin="A"/>
+<wire x1="149.86" y1="233.68" x2="157.48" y2="233.68" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$29" class="0">
+<segment>
+<pinref part="IC5" gate="A" pin="Q0"/>
+<pinref part="LED7" gate="G$1" pin="A"/>
+<wire x1="149.86" y1="241.3" x2="167.64" y2="241.3" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$30" class="0">
+<segment>
+<pinref part="SW3" gate="G$1" pin="P3"/>
+<wire x1="302.26" y1="43.18" x2="297.18" y2="43.18" width="0.1524" layer="91"/>
+<pinref part="R22" gate="G$1" pin="1"/>
 </segment>
 </net>
 </nets>
